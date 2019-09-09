@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 3</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Приложение по опросу сервиса nbrb.by</h1>
+    <h3>Получение динамики официального курса белорусского рубля по отношению к заданной иностранной валюте</h3>
+    <form>
+        <p>Выберите валюту(ы)</p>
+        <div>
+        <input type="checkbox" id="USD" value="145" name="currency"/>
+        <label for="USD">USD</label> 
+        </div>
+        <div>
+        <input type="checkbox" id="EUR" value="292" name="currency"/>
+        <label for="EUR">EUR</label> 
+        </div>
+        <div>
+        <input type="checkbox" id="RUB" value="298" name="currency"/>
+        <label for="RUB">RUB</label> 
+        </div>
+        <div>
+        <input type="checkbox" id="TRY" value="302" name="currency"/>
+        <label for="TRY">TRY</label> 
+        </div>
+        <div>
+        <input type="checkbox" id="CZK" value="305" name="currency"/>
+        <label for="CZK">CZK</label> 
+        </div>
+        <div>
+        <input type="checkbox" id="PLN" value="293" name="currency"/>
+        <label for="PLN">PLN</label> 
+        </div>
+        <p>Задайте период времени</p>
+       <span>C:&nbsp;</span> <input min="2016-07-01" max="2050-12-31" type="date" name="date" id="start_date">
+       <span>По:&nbsp;</span><input min="2016-07-01" max="2050-12-31" type="date" name="date" id="end_date"><br><br>
+       <input id="button" type="button" value="Получить" onclick="showResults()">
+    </form>
+</body>
+</html>
